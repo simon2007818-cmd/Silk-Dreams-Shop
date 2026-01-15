@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILK & DREAMS | 頂級真絲護髮睡帽</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; margin: 0; background-color: #fdfaf7; color: #333; }
+        header { height: 80vh; background: url('https://images.unsplash.com/photo-1520006447230-bb5963511e91?q=80&w=2000') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .overlay { background: rgba(0,0,0,0.3); padding: 40px; border-radius: 5px; }
+        .container { max-width: 1000px; margin: auto; padding: 50px 20px; }
+        h1 { font-size: 3rem; letter-spacing: 5px; text-transform: uppercase; }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+        .form-section { background: #fff; padding: 40px; border: 1px solid #eee; margin-top: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; font-family: sans-serif; }
+        .btn { background: #222; color: #fff; padding: 15px 40px; text-decoration: none; display: inline-block; cursor: pointer; border: none; font-size: 1rem; letter-spacing: 2px; }
+        .btn:hover { background: #555; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="overlay">
+        <h1>Silk & Dreams</h1>
+        <p>Wake up with Salon-Ready Hair, Every Morning.</p>
+        <a href="#order" class="btn">立即預訂專屬儀式感</a>
+    </div>
+</header>
+
+<div class="container" id="order">
+    <div style="text-align:center">
+        <h2>護髮秘密：22姆米桑蠶絲</h2>
+        <p>減少 45% 摩擦毛躁 | 鎖住髮絲天然油脂 | 歐美高端睡眠美學</p>
+    </div>
+
+    <div class="form-section">
+        <h3>下單/諮詢訊息登記</h3>
+        <p>提交後，我們的私人顧問將通過 WhatsApp 與您確認訂單詳情及付款方式。</p>
+        <form action="https://formspree.io/f/mdaakpwa" method="POST"> <label>您的姓名 / Name</label>
+            <input type="text" name="name" placeholder="例如: Mr. Chan / Ms. Wong" required>
+            
+            <label>WhatsApp 電話 (必填)</label>
+            <input type="tel" name="phone" placeholder="我們將通過此電話聯絡您確認訂單" required>
+            
+            <label>選擇款式與顏色</label>
+            <select name="product">
+                <option value="Champagne-Gold">香檳金 Champagne Gold (HK$388)</option>
+                <option value="Pearl-White">珍珠白 Pearl White (HK$388)</option>
+                <option value="Midnight-Black">午夜黑 Midnight Black (HK$388)</option>
+            </select>
+
+            <label>收貨地址</label>
+            <textarea name="address" rows="3" placeholder="請輸入香港或內地收件地址"></textarea>
+
+            <button type="submit" class="btn">提交訊息，開始預約</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
